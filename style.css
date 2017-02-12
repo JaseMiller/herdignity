@@ -1,7 +1,8 @@
 /*
 Theme Name: HER Dignity Network
-Version: 1.0
-Author: Shari Waters @ Waters Designs
+Version: 1.1
+Original Author: Shari Waters @ Waters Designs
+Revised: jase@jase.is
 */
 
 @import url(fonts.css);
@@ -66,7 +67,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	width:211px;height:120px;
 	float:left;
 	margin-top:0px;
-	background: url('img/icons.png') 0 0 no-repeat;
+	background: url('img/separate/logo.png') no-repeat;
 }
 #logo a{
 	display:block;
@@ -77,11 +78,14 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	float:right;
 	width:555px;height:74px;
 	margin:0px 0px;
-	background: url('img/icons.png') 0px -349px no-repeat;
+	background: url('img/separate/join-circle.png') no-repeat;
+	background-position: right;
+	background-size: contain;
 }
 #join a{
 	margin-top:30px;
-	padding-left:85px;
+	padding-left:50px;
+	padding-right: 85px;
 	display:block;
 	width:480px;
 	font-weight: 100;
@@ -96,7 +100,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	margin-right:37px;
 }
 .search-text {
-    background: url('img/icons.png') no-repeat scroll -620px -340px transparent;
+    background: url('img/separate/spyglass.png') no-repeat scroll transparent;
     border: 1px solid #EDEDED;
     color: #999999;
     font-size: 10px;
@@ -146,7 +150,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	list-style:none;
 	height:24px;
 	margin:0px 5px;padding:0px 0px 0px 15px;
-	background: transparent url('img/icons.png') 0px -300px no-repeat;
+	background: transparent url('img/separate/gray-bullet.png') no-repeat;
 }
 #menu ul li a{
 	color:#6d6e71;
@@ -166,7 +170,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	color:#a41f35;
 }
 #menu ul li:hover, #menu ul li.current-page-ancestor,  #menu ul li.current-menu-item{
-	background: transparent url('img/icons.png') 0px -331px no-repeat;
+	background: transparent url('img/separate/purple-bullet.png') no-repeat;
 }
 #menu ul li ul.sub-menu{
 	top:26px;
@@ -336,7 +340,7 @@ div.numbers-top div#nav_num a.activeSlide {
 	margin:0px auto;
 	text-align:center;
 	height:80px;width:943px;
-	background: url('img/icons.png') 0px -460px; no-repeat;
+	background: url('img/separate/tagline-top.png') no-repeat;
 	padding-top:55px;
 }
 #top .tagline a{
@@ -367,7 +371,7 @@ div.numbers-top div#nav_num a.activeSlide {
 #home .right-col{
 	float:left;
 	margin-left:30px;
-	background: url('img/rollovers.png') -715px 0px no-repeat;
+	background: url('img/separate/lifespan.png') left no-repeat;
 }
 #home .right-col .post, #home .right-col. post .entry{margin:0px;padding:0px;}
 
@@ -440,7 +444,7 @@ ul.block li p, ul.h-block li p{
 #buttons{
 	width:580px;
 	height:570px;
-	margin:-20px 0px 0px 45px;
+	margin:-20px 0px 0px 85px;
 }
 
 #buttons ul {display:inline;list-style:none;height:auto; margin:10px 0px;padding:0px;}
@@ -454,51 +458,41 @@ ul.block li p, ul.h-block li p{
 	text-indent:-9999em;display:block;height:195px;
 }
 
-#buttons li.girl{width:195px;background: url('img/rollovers.png') -21px -10px no-repeat;}
+#buttons li.girl{width:195px;background: url('img/separate/girl.png') no-repeat;}
 
-#buttons li.woman{width:195px;background: url('img/rollovers.png') -21px -216px no-repeat;}
+#buttons li.woman{width:195px;background: url('img/separate/woman.png') no-repeat;}
 
-#buttons li.health{width:195px;background: url('img/rollovers.png') -21px -420px no-repeat;}
-
-
-#buttons li.prenatal a{width:114px;background: url('img/rollovers.png') -224px -635px no-repeat;}
-
-#buttons li.prenatal a:hover{background: url('img/rollovers.png') -224px -10px no-repeat;}
-
-#buttons li.childhood a{width:114px;background: url('img/rollovers.png') -346px -635px no-repeat;}
-
-#buttons li.childhood a:hover{background: url('img/rollovers.png') -346px -10px no-repeat;}
-
-#buttons li.teen a{width:114px;background: url('img/rollovers.png') -468px -635px no-repeat;}
-
-#buttons li.teen a:hover{background: url('img/rollovers.png') -468px -10px no-repeat;}
+#buttons li.health{width:195px;background: url('img/separate/health.png') no-repeat;}
 
 
-#buttons li.women a{width:114px;background: url('img/rollovers.png') -224px -840px no-repeat;}
+#buttons li.prenatal a{width:114px;background: url('img/separate/prenatal.png') no-repeat; opacity: 0.7;}
+#buttons li.prenatal a:hover{opacity: 1.0;}
 
-#buttons li.women a:hover{background: url('img/rollovers.png') -224px -216px no-repeat;}
+#buttons li.childhood a{width:114px;background: url('img/separate/childhood.png') no-repeat; opacity: 0.7;}
+#buttons li.childhood a:hover{opacity: 1.0;}
 
-#buttons li.mother a{width:114px;background: url('img/rollovers.png') -346px -840px no-repeat;}
-
-#buttons li.mother a:hover{background: url('img/rollovers.png') -346px -216px no-repeat;}
-
-#buttons li.aging a{width:114px;background: url('img/rollovers.png') -468px -840px no-repeat;}
-
-#buttons li.aging a:hover{background: url('img/rollovers.png') -468px -216px no-repeat;}
+#buttons li.teen a{width:114px;background: url('img/separate/adolescence.png') no-repeat; opacity: 0.7;}
+#buttons li.teen a:hover{opacity: 1.0;}
 
 
+#buttons li.women a{width:114px;background: url('img/separate/women.png') no-repeat; opacity: 0.7;}
+#buttons li.women a:hover{opacity: 1.0;}
 
-#buttons li.hiv a{width:114px;background: url('img/rollovers.png') -224px -1044px no-repeat;}
+#buttons li.mother a{width:114px;background: url('img/separate/motherhood.png') no-repeat; opacity: 0.7;}
+#buttons li.mother a:hover{opacity: 1.0;}
 
-#buttons li.hiv a:hover{background: url('img/rollovers.png') -224px -419px no-repeat;}
+#buttons li.aging a{width:114px;background: url('img/separate/aging.png') no-repeat; opacity: 0.7;}
+#buttons li.aging a:hover{opacity: 1.0;}
 
-#buttons li.communities a{width:114px;background: url('img/rollovers.png') -346px -1044px no-repeat;}
 
-#buttons li.communities a:hover{background: url('img/rollovers.png') -346px -420px no-repeat;}
+#buttons li.hiv a{width:114px;background: url('img/separate/hiv.png') no-repeat; opacity: 0.7;}
+#buttons li.hiv a:hover{opacity: 1.0;}
 
-#buttons li.public a{width:114px;background: url('img/rollovers.png') -468px -1044px no-repeat;}
+#buttons li.communities a{width:114px;background: url('img/separate/communities.png') no-repeat; opacity: 0.7;}
+#buttons li.communities a:hover{opacity: 1.0;}
 
-#buttons li.public a:hover{background: url('img/rollovers.png') -468px -420px no-repeat;}
+#buttons li.public a{width:114px;background: url('img/separate/public.png') no-repeat; opacity: 0.7;}
+#buttons li.public a:hover{opacity: 1.0;}
 
 /********************
     ISSUES PAGE STYLE
@@ -1130,7 +1124,7 @@ div.wpcf7-validation-errors {
 	margin-top:-250px;
 	height:250px;width:159px;
 	z-index:700;
-	background: transparent url('img/icons.png') -450px 0px; no-repeat;
+	background: transparent url('img/separate/logo-design.png') no-repeat;
 }
 #footer .tagline{
 	position:relative;
@@ -1140,7 +1134,7 @@ div.wpcf7-validation-errors {
 	height:55px;width:920px;
 	padding-top:60px;
 	padding-left:50px;
-	background: #fff url('img/icons.png') 0px -460px; no-repeat;
+	background: #fff url('img/separate/footer-tagline.png') no-repeat;
 }
 #footer .tagline .dot{
 	width:10px;
@@ -1163,7 +1157,7 @@ div.wpcf7-validation-errors {
 #footer .copy{
 	position:relative;
 	height:120px;
-	background:#a41f35 url('img/icons.png') 0px -650px no-repeat;
+	background:#a41f35 url('img/separate/footer-bg.png') no-repeat;
 	z-index:500;
 	padding-top:20px;
 }
@@ -1212,38 +1206,38 @@ div.wpcf7-validation-errors {
 }
 #footer ul.social li.fb a{
 	display:block;
-	background: url('img/icons.png') -1px -200px no-repeat;
-	height:31px;width:32px;
+	background: url('img/separate/facebook.png') no-repeat;
+	height:32px;width:32px;
 	text-indent:-9999em;
 }
 #footer ul.social li.pin a{
 	display:block;
-	background: url('img/icons.png') -117px -199px no-repeat;
-	height:34px;width:34px;
+	background: url('img/separate/pinterest.png') no-repeat;
+	height:32px;width:32px;
 	text-indent:-9999em;
 }
 #footer ul.social li.linkedin a{
 	display:block;
-	background: url('img/icons.png') -154px -200px no-repeat;
-	height:34px;width:34px;
+	background: url('img/separate/linkedin.png') no-repeat;
+	height:32px;width:32px;
 	text-indent:-9999em;
 }
 #footer ul.social li.gplus a{
 	display:block;
-	background: url('img/icons.png') -189px -200px no-repeat;
-	height:34px;width:34px;
+	background: url('img/separate/gplus.png') no-repeat;
+	height:32px;width:32px;
 	text-indent:-9999em;
 }
 #footer ul.social li.tw a{
 	display:block;
-	background: url('img/icons.png') -78px -200px no-repeat;
-	height:31px;width:34px;
+	background: url('img/separate/twitter.png') no-repeat;
+	height:32px;width:32px;
 	text-indent:-9999em;
 }
 #footer ul.social li.rss a{
 	display:block;
-	background: url('img/icons.png') -38px -200px no-repeat;
-	height:31px;width:34px;
+	background: url('img/separate/rss.png') no-repeat;
+	height:32px;width:32px;
 	text-indent:-9999em;
 }
 /********************
