@@ -53,7 +53,7 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 #wrapper{
-	width:950px;
+	max-width:950px;
 	margin:0px auto;
 }
 
@@ -128,7 +128,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     MAIN NAVIGATION
 *********************/
 #menu{
-	width:700px;
+	max-width:700px;
 	float:right;
 	padding:0px;
 	margin:15px 0px 0px;
@@ -249,7 +249,8 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     FEATURED STYLE
 *********************/
 #banner{
-	width:950px;height:477px;
+	max-width:950px;
+	height:477px;
 	margin:0px auto;
 }
 
@@ -339,7 +340,8 @@ div.numbers-top div#nav_num a.activeSlide {
 #top .tagline{
 	margin:0px auto;
 	text-align:center;
-	height:80px;width:943px;
+	height:80px;
+	max-width:943px;
 	background: url('img/separate/tagline-top.png') no-repeat;
 	padding-top:55px;
 }

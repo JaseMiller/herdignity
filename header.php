@@ -2,6 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=UTF-8" />
+
+<!-- responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+
 <title><?php if (is_single() || is_page() || is_archive()) { wp_title('',true); } else { bloginfo('name'); echo(' &#8212; '); bloginfo('description'); } ?></title>
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
 <link rel="Shortcut Icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico"/>
@@ -18,7 +24,11 @@
 </head>
 
 <body <?php if(is_singular()) { echo ' class="'.$post->post_name.'"'; } ?>>
-<div id="wrapper">
+
+	<div class="container-fluid">
+        <div class="content">
+        
+			<div id="wrapper">
 
 <!--  Begin Header -->
 <div id="header">

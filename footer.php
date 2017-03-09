@@ -34,6 +34,8 @@ while (have_posts()) : the_post(); ?>
 
 
 </div> <!--  End Wrapper -->
+</div> <!-- /.content -->
+</div> <!-- /.container-fluid -->
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
