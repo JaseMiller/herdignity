@@ -12,6 +12,8 @@
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
 <link rel="Shortcut Icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico"/>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style2.css" type="text/css" media="screen" />
+
 <meta http-equiv="X-UA-Compatible" content="IE=8" />
 <!--[if gte IE 7]>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/ie7.css" type="text/css" />
@@ -25,13 +27,15 @@
 
 <body <?php if(is_singular()) { echo ' class="'.$post->post_name.'"'; } ?>>
 
-	<div class="container-fluid">
+	<div class="container">
         <div class="content">
         
 			<div id="wrapper">
 
+<div class="row header">
+	<div class="col-md-12 col-sm-12">
+	
 <!--  Begin Header -->
-<div id="header">
 <?php get_search_form(); ?>
 <h1 id="logo"><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 <div id="join"><a href="<?php bloginfo('url'); ?>/join/"><?php bloginfo('description'); ?></a></div>
@@ -39,4 +43,6 @@
 <!--  Begin Menu -->
 <div id="menu"><?php wp_nav_menu(  array( 'theme_location' => 'header-menu', 'container' => ''));  ?></div>
 
-</div><!--  End Header -->
+	</div> <!-- /.col -->
+</div> <!-- /.row -->
+<!--  End Header -->

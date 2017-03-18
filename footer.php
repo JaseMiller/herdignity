@@ -1,22 +1,47 @@
 <!--  Begin Footer -->
-<div id="footer">
-<div class="tagline"><?php
-query_posts('page_id=29'); 
-global $more;
-$more = 0; 
-while (have_posts()) : the_post(); ?>
-<?php the_content(); ?>				
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
-</div>
-<div class="copy">
-<p class="slogan"><?php bloginfo('description'); ?></p>
-<ul class="social">
-<li class="fb"><a href="http://www.facebook.com/HerDignityNetwork" target="_blank">fb</a></li><li class="tw"><a href="http://www.twitter.com/herdignitynet" target="_blank">twitter</a></li><li class="pin"><a href="http://www.pinterest.com/herdignitynet" target="_blank">pinterest</a></li>
-<li class="gplus"><a href="https://plus.google.com/u/2/100401946075114166668/posts"  target="_blank">google plus</a></li>
-<li class="linkedin"><a href="http://www.linkedin.com/groups/Her-Dignity-Network-4892068?gid=4892068&trk=hb_side_g" target="_blank">linkedin</a></li>
-<li class="rss"><a href="<?php bloginfo('url'); ?>/rss-2">rss</a></li>
-</ul>
+<div class="footer">
+	
+<div class="row tagline">
+	<div class="col-md-12 col-sm-12">
+		<a title="About" href="http://www.herdignity.net/about/">Learn More</a>
+		<img class="dot" src="http://herdignity.dev/wp-content/uploads/2013/02/dot-1.gif" alt="-" width="16" height="25" />
+		<a title="Join" href="http://www.herdignity.net/get-involved/">Get Involved</a>
+		<img class="dot" src="http://herdignity.dev/wp-content/uploads/2013/02/dot-1.gif" alt="-" width="16" height="25" />
+		<a title="Share" href="http://www.herdignity.net/share/">Share Your Story</a>
+		<img class="arrow" src="http://herdignity.dev/wp-content/uploads/2013/02/arrow.gif" alt="arrow" width="43" height="30" />
+	</div> <!-- /.col -->
+</div> <!-- /.row -->
+
+<div class="row purplebg">
+	<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+
+		<div class="copy">
+			<p class="slogan"><?php bloginfo('description'); ?></p>
+		</div>
+	</div> <!-- /.col -->
+
+	<div class="col-md-2 col-sm-12 col-xs-12">
+	
+		<div class="social">
+
+			<a href="http://www.facebook.com/HerDignityNetwork" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/separate/facebook.png" alt="Facebook" /></a>
+
+			<a href="http://www.twitter.com/herdignitynet" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/separate/twitter.png" alt="Twitter" /></a>
+
+			<a href="http://www.pinterest.com/herdignitynet" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/separate/pinterest.png" alt="Pinterest" /></a>
+
+			<a href="https://plus.google.com/u/2/100401946075114166668/posts"  target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/separate/gplus.png" alt="Google+" /></a>
+
+			<a href="http://www.linkedin.com/groups/Her-Dignity-Network-4892068?gid=4892068&trk=hb_side_g" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/separate/linkedin.png" alt="LinkedIn" /></a>
+
+			<a href="<?php bloginfo('url'); ?>/rss-2"><img src="<?php bloginfo('template_directory'); ?>/img/separate/rss.png" alt="RSS" /></a>
+
+		</div>
+
+	</div> <!-- /.col -->
+
+	<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+
 <?php
 query_posts('page_id=35'); 
 global $more;
@@ -25,12 +50,18 @@ while (have_posts()) : the_post(); ?>
 <?php the_content(); ?>				
 <?php endwhile; ?>
 <?php wp_reset_query(); ?>
-</div>
 
+	</div> <!-- /.col -->
+</div> <!-- /.row -->
 
-<div id="deco"></div>
+<div class="row footer" id="">
+	<div class="col-md-12">
+	
+		<div class="deco"></div>
 
-</div>
+	</div> <!-- /.col -->
+</div> <!-- /.row -->
+</div> <!-- /.footer -->
 
 
 </div> <!--  End Wrapper -->

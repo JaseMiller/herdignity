@@ -1,0 +1,212 @@
+/*
+Theme Name: HER Dignity Network
+Version: 2.0
+Author: JASE jase@jase.is
+*/
+
+@import url(fonts.css);
+
+
+.header {
+	padding-top:35px;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-bottom: 1px #990033 solid;
+}
+.row .banner, .banner {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.banner .col-md-12, .banner .col-sm-12 {
+	padding: 0;
+	margin: 0;
+}
+
+#spd-shortcode-slider, #slides {
+	padding: 0;
+	margin: 0;
+}
+
+.tagline {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	height: 160px;
+	background: url('img/separate/tagline-top.png') no-repeat;
+	background-position: top;
+	padding-top:65px;
+}
+.tagline a{
+	color:#666666;
+	font-family: 'Myriad Pro Light','Lato', 'Century Gothic',Helvetica, Arial;
+	font-size:3em;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+.tagline .dot, .tagline .arrow {
+	vertical-align: auto;
+	margin-bottom: 15px;
+}
+.aside {
+	border-right: 3px dotted #990033;
+	padding-right: 20px;
+}
+.aside .bottom {
+	/* border-bottom: 3px dotted #990033; */
+}
+.extrablocks {
+}
+.extrablocks h2, .aside h2 {
+	color:#660066;
+	font-family:bauerbodni_blkcn_btblack;
+	text-transform:uppercase;
+	font-weight:400;
+	font-size:22px;
+}
+.extrablocks p, .aside p {
+	margin-bottom:20px;
+	color:#666;
+	padding:3px 0px;
+}
+.hd-categories {
+	margin-bottom: 20px;
+}
+.hd-categories .girl {
+	height: 100%;
+	background: url('img/separate/girl.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hd-categories .lightgreen {
+	background-color: #afb444 !important;
+}
+.hd-categories a img:hover {
+	opacity: 0.2;
+}
+
+.is-table-row {
+    display: table;
+}
+.is-table-row [class*="col-"] {
+    float: none;
+	display: table-cell;
+	vertical-align: top;
+}
+
+/*** FOOTER ***/
+
+.footer .copy{
+	position:relative;
+	height:120px;
+	z-index:500;
+	padding-top:20px;
+}
+.footer .copy p{
+	width:400px;
+	margin:0px auto;
+	text-align:center;
+	padding:0px;
+	height:24px;
+}
+.footer .copy p.slogan{
+	color:#fff;
+	font-size:16px;
+	text-decoration:none;
+	margin:15px auto 30px;
+	letter-spacing:1px;
+}
+.footer .copy a {
+	color:#fff;
+	text-decoration:none;
+	margin-bottom:7px;
+	letter-spacing:1px;
+}
+.purplebg {
+	background-color: #a41f35;
+	text-align:center;
+	margin-top: 50px;
+}
+.deco {
+	position:relative;
+	left:20px;
+	top: -250px;
+	height:250px;width:159px;
+	z-index:700;
+	background: transparent url('img/separate/logo-design.png') no-repeat;
+}
+.footer .tagline {
+	position:relative;
+	z-index:400;
+	margin:0px auto;
+	text-align:center;
+	height:55px;width:920px;
+	padding-top:60px;
+	padding-left:50px;
+	background: #fff url('img/separate/footer-tagline.png') no-repeat;
+}
+.footer .tagline .dot {
+	width:10px;
+	height:15px;
+}
+.footer .tagline .arrow {
+	width:24px;
+	height:18px;
+}
+.footer .tagline a {
+	color:#660066;
+	font-family:'Myriad Pro Light','Lato','Century Gothic',Helvetica, Arial;
+	font-size:2.3em;
+	text-transform:uppercase;
+	text-decoration:none;
+	z-index:500;
+}
+.footer div.social {
+	padding-top: 30px;
+}
+.footer div.social img {
+	float: left;
+	margin: 3px;
+	z-index: 9999;
+}
+
+
+@media (max-width: 900px){
+
+	.tagline {
+		display: none;
+	}
+	.extrablocks, .is-table-row .extrablocks, .aside, .is-table-row .aside {
+	display: none;
+	}
+	.hd-categories {
+		margin-top: 20px;
+	}
+	.footer div.social {
+		padding-top: 0px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+		z-index: 9999;
+	}
+	.footer div.social img {
+		float: none;
+		text-align: center;
+		z-index: 9999;
+	}
+	.deco {
+		display: none;
+	}
+	.footer .copy {
+		height: auto;
+		z-index: 0;
+	}
+	.footer .copy p {
+		height:auto;
+	}
+
+}
