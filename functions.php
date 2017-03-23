@@ -59,6 +59,13 @@ array(
 );
 }
 
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
+
+register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'herdignity' ),
+) );
+
 add_action( 'init', 'register_my_menus' );
 $myExcerpt = get_the_excerpt();
   $tags = array("<p>", "</p>");

@@ -23,6 +23,16 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/media-scroll.js"></script>
+
+<script type="text/javascript">
+	$('.dropdown-toggle').dropdown();
+	$('ul.nav li.dropdown').hover(function() {
+  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+		}, function() {
+  		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+		});
+</script>
+
 </head>
 
 <body <?php if(is_singular()) { echo ' class="'.$post->post_name.'"'; } ?>>
@@ -32,17 +42,69 @@
         
 			<div id="wrapper">
 
-<div class="row header">
-	<div class="col-md-12 col-sm-12">
-	
 <!--  Begin Header -->
-<?php get_search_form(); ?>
-<h1 id="logo"><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-<div id="join"><a href="<?php bloginfo('url'); ?>/join/"><?php bloginfo('description'); ?></a></div>
+<div class="row header-top">
 
-<!--  Begin Menu -->
-<div id="menu"><?php wp_nav_menu(  array( 'theme_location' => 'header-menu', 'container' => ''));  ?></div>
-
+	<div class="search col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+		<?php get_search_form(); ?>
 	</div> <!-- /.col -->
+
 </div> <!-- /.row -->
-<!--  End Header -->
+<div class="row header is-table-row">
+
+	<div class="logo col-md-3 col-sm-3 col-xs-12">
+		<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
+		<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/separate/logo.png" alt="<?php bloginfo('name'); ?>" /></a></h1>
+	</div> <!-- /.col -->
+	
+	<div class="join col-md-7 col-sm-7 col-xs-8">
+		<div class="tag">
+			<a href="<?php bloginfo('url'); ?>/join/">
+			<?php bloginfo('description'); ?></a>
+		</div> <!-- /.join -->
+	</div> <!-- /.col -->
+	<div class="join col-md-2 col-sm-2 col-xs-4">
+		<a href="<?php bloginfo('url'); ?>/join/">
+			<img class="join-circle pull-right" src="<?php bloginfo('template_directory'); ?>/img/join-the-network.svg" alt="Join the Network" /></a>
+	</div>
+
+</div> <!-- /.row -->
+
+	<div class="tag-mobile">
+		<?php bloginfo('description'); ?>
+	</div>
+	
+<div class="row header-bottom">
+
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<!--  Begin Menu -->
+		<nav class="navbar navbar-default" role="navigation">
+  			<div class="container-fluid navbar-right">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      				</button>
+    			</div>
+    
+				<?php wp_nav_menu(  array(
+				'menu'              => 'primary',
+                'theme_location'    => 'header-menu',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav navbar-right dropdown',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker()));  ?>
+			
+			</div>
+		</nav>
+	
+	</div> <!-- /.col -->
+
+</div> <!-- /.row --> <!--  /.header -->
+

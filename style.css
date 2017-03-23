@@ -53,6 +53,7 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 #wrapper{
+	width: 100%;
 	max-width:950px;
 	margin: 0px auto;
 }
@@ -62,7 +63,8 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 #logo {
 	text-indent:-9999em;
-	width:211px;height:120px;
+	width:211px;
+	height:120px;
 	float:left;
 	margin-top:0px;
 	background: url('img/separate/logo.png') no-repeat;
@@ -74,7 +76,8 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 }
 #join{
 	float:right;
-	width:555px;height:74px;
+	max-width:555px;
+	height:74px;
 	margin:0px 0px;
 	background: url('img/separate/join-circle.png') no-repeat;
 	background-position: right;
@@ -85,7 +88,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	padding-left:50px;
 	padding-right: 85px;
 	display:block;
-	width:480px;
+	max-width:480px;
 	font-weight: 100;
 	white-space: nowrap;
 	font-family:  Lato, 'Myriad Pro Light', 'Century Gothic', Helvetica, Arial, sans-serif;
@@ -93,21 +96,24 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	color:#252525;text-decoration:none;
 }
 #searchform{
-	width:250px;
+	width:auto;
 	float:right;
-	margin-right:37px;
+	margin-right:0;
 }
 .search-text {
     background: url('img/separate/spyglass.png') no-repeat scroll transparent;
+    background-position: right center;
     border: 1px solid #EDEDED;
     color: #999999;
-    font-size: 10px;
+    font-size: 14px;
     height: 17px;
     margin-right: 5px;
     margin-top: -3px;
     padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
-    width: 175px;
+    width: auto;
     z-index: 7;
 }
 .search-submit {
@@ -117,7 +123,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     height: 17px;
     margin-left: -30px;
     padding: 0;
-    position: absolute;
+    position: relative;
     text-indent: -1000em;
     width: 16px;
     z-index: 10;
@@ -259,6 +265,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     position: relative;
     width: 100%;
 }
+
 div.numbers-top {
 	position: relative;
 	width: 100%;
@@ -337,20 +344,9 @@ div.numbers-top div#nav_num a.activeSlide {
 	}
 
 #top .tagline{
-	margin:0px auto;
-	text-align:center;
-	height:80px;
-	max-width:943px;
-	background: url('img/separate/tagline-top.png') no-repeat;
-	padding-top:55px;
+	
 }
-#top .tagline a{
-	color:#666666;
-	font-family: 'Myriad Pro Light','Lato', 'Century Gothic',Helvetica, Arial;
-	font-size:3em;
-	text-transform:uppercase;
-	text-decoration:none;
-}
+
 
 
 /********************

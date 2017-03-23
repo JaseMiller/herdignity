@@ -6,15 +6,73 @@ Author: JASE jase@jase.is
 
 @import url(fonts.css);
 
+.is-table-row {
+    display: table;
+}
+.is-table-row [class*="col-"] {
+    float: none;
+	display: table-cell;
+	vertical-align: top;
+}
+.is-table-row [class*="join"] {
+    float: none;
+	display: table-cell;
+	vertical-align: middle;
+}
 
-.header {
+.header-top {
 	padding-top:35px;
+}
+.header {
+	padding-top:0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.header-bottom {
+	padding-top:0px;
 	padding-bottom: 0px;
 	margin-bottom: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
 	border-bottom: 1px #990033 solid;
 }
+
+.logo {
+	margin-left: 0;
+}
+.logo a {
+	display:block;
+	border:0px;
+}
+.join {
+	position: relative;
+	max-width: 100%;
+	height: 80px;
+	margin: 0;
+	text-align: right;
+}
+.join a {
+	display:block;
+	font-weight: 100;
+	font-family: Lato, 'Myriad Pro Light', 'Century Gothic', Helvetica, Arial, sans-serif;
+	font-size:28px;
+	color:#252525;
+	text-decoration:none;
+}
+.join-circle {
+	max-width: 100px;
+}
+.tag-mobile {
+	display: none;
+	font-weight: 400;
+	font-family: Lato, 'Myriad Pro Light', 'Century Gothic', Helvetica, Arial, sans-serif;
+	font-size:16px;
+	color:#252525;
+	text-decoration:none;
+	}
+
 .row .banner, .banner {
 	width: 100%;
 	padding: 0;
@@ -25,10 +83,17 @@ Author: JASE jase@jase.is
 	margin: 0;
 }
 
+
 #spd-shortcode-slider, #slides {
 	padding: 0;
 	margin: 0;
 }
+#spd-shortcode-slider #slides img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
 
 .tagline {
 	display: block;
@@ -74,7 +139,7 @@ Author: JASE jase@jase.is
 	padding:3px 0px;
 }
 .hd-categories {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 .hd-categories .girl {
 	height: 100%;
@@ -83,43 +148,123 @@ Author: JASE jase@jase.is
 	background-position: center;
 }
 
-.hd-categories .lightgreen {
-	background-color: #afb444 !important;
+div.cat-title {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%; 
+	margin: 0;
+	padding: 15px 10px;
+	z-index: 500;
 }
-.hd-categories a img:hover {
-	opacity: 0.2;
+div.cat-title p {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 5px;
+	margin: 0;
+}
+.cat-box {
+	padding: 3px;
+}
+.hd-categories a {
+	text-decoration: none;
+}
+.hd-categories .lightgreen {
+	padding: 0;
+	background-color: #afb444;
+}
+.hd-categories .lightorange {
+	padding: 0;
+	background-color: #fcb22d;
+}
+.hd-categories .darkorange {
+	padding: 0;
+	background-color: #f15b26;
+}
+.hd-categories .blue {
+	padding: 0;
+	background-color: #2468b3;
+}
+.hd-categories .green {
+	padding: 0;
+	background-color: #3f8d42;
+}
+.hd-categories .purple {
+	padding: 0;
+	background-color: #6f2771;
+}
+.hd-categories .medorange {
+	padding: 0;
+	background-color: #f7962d;
+}
+.hd-categories .brown {
+	padding: 0;
+	background-color: #855a25;
+}
+.hd-categories .cyan {
+	padding: 0;
+	background-color: #1d9ed8;
 }
 
-.is-table-row {
-    display: table;
+
+
+
+
+.hd-categories a img:hover {
+	opacity: 0.5;
 }
-.is-table-row [class*="col-"] {
-    float: none;
-	display: table-cell;
-	vertical-align: top;
+
+.prenatal {
+	background: url('img/categories/prenatal-full.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	float: none;
+	display: block !important;
+	vertical-align: top !important;
+	height: 100% !important;
 }
+img.category-img {
+	object-fit: cover;
+	height: 100%;
+	max-height: 200px;
+	width: 100%;
+}
+
+
 
 /*** FOOTER ***/
 
-.footer .copy{
-	position:relative;
-	height:120px;
-	z-index:500;
-	padding-top:20px;
+.footer {
+	position: relative;
 }
-.footer .copy p{
-	width:400px;
+.footer .copy {
+	position:relative;
+	height:auto;
+	padding-top:20px;
+	background-image: url('img/separate/footer-bg-midpoint.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	color:#fff;
+	z-index:500;
+}
+.footer .copy p {
+	color:#fff;
+	max-width:400px;
 	margin:0px auto;
 	text-align:center;
 	padding:0px;
 	height:24px;
 }
-.footer .copy p.slogan{
+.footer .copy p.slogan {
 	color:#fff;
 	font-size:16px;
 	text-decoration:none;
 	margin:15px auto 30px;
 	letter-spacing:1px;
+	text-align: center;
 }
 .footer .copy a {
 	color:#fff;
@@ -129,13 +274,17 @@ Author: JASE jase@jase.is
 }
 .purplebg {
 	background-color: #a41f35;
-	text-align:center;
+	text-align: center;
 	margin-top: 50px;
+	color:#fff;
+}
+.purplebg a {
+	color:#fff;
 }
 .deco {
-	position:relative;
+	position:absolute;
 	left:20px;
-	top: -250px;
+	bottom: 0px;
 	height:250px;width:159px;
 	z-index:700;
 	background: transparent url('img/separate/logo-design.png') no-repeat;
@@ -176,13 +325,45 @@ Author: JASE jase@jase.is
 }
 
 
+
+
 @media (max-width: 900px){
 
 	.tagline {
 		display: none;
 	}
+	.logo img {
+		margin: 0 auto;
+	}
+	.tag {
+		display: none;
+	}
+	.tag-mobile {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	tag-mobile a, tag-mobile a:hover {
+		text-decoration: none;
+	}
+	.join {
+		text-align: center;
+		max-width: 100%;
+		line-height: 3em;
+		height: auto;
+	}
+	.join a {
+		font-weight: 100;
+		font-size:18px;
+	}
+	img.join-circle {
+	}
+	
+	.search { display: none; }
+	#menu { display: none; }
+
 	.extrablocks, .is-table-row .extrablocks, .aside, .is-table-row .aside {
-	display: none;
+		display: none;
 	}
 	.hd-categories {
 		margin-top: 20px;
@@ -207,6 +388,15 @@ Author: JASE jase@jase.is
 	}
 	.footer .copy p {
 		height:auto;
+	}
+	div.numbers-top #slides .info {
+    	width: 180px;
+	}
+	#spd-shortcode-slider #slides img {
+		background-position: center;
+	}
+	.footer .copy p {
+		max-width:100%;
 	}
 
 }

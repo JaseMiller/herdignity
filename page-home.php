@@ -29,7 +29,7 @@ Template Name: Welcome
 
 	<div class="aside col-md-3 col-sm-3">
 	<a href="http://www.herdignity.net/join/">
-	<h2>Growing the Network</h2><p>Help develop a global network of men & women, individuals & organizations, committed to the broader health needs of girls and women.</p>
+	<h2>Growing the Network</h2><p>Help develop a global network of men &amp; women, individuals &amp; organizations, committed to the broader health needs of girls and women.</p>
 	</a>
 		<div class="bottom"></div>
 	
@@ -49,22 +49,36 @@ global $more; $more = 0; while (have_posts()) : the_post(); ?>
 
 	
 	
+
 	<div class="extrablocks col-md-3 col-sm-3">
-		 <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/girl.png" />
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/separate/girl.png" alt="" />
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Prenatal / Infancy" href="http://www.herdignity.net/prenatal-infancy/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/prenatal.png"alt="Prenatal and Infancy" /></a>
+	
+	<div class="cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4 lightgreen">
+		<a title="Prenatal / Infancy" href="http://www.herdignity.net/prenatal-infancy/">
+		<div class="cat-title lightgreen"><p>Prenatal / Infancy</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/prenatal-full.jpg" alt="Prenatal / Infancy" /></a>
 	</div> <!-- /.col -->
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Childhood" href="http://www.herdignity.net/childhood/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/childhood.png"alt="Childhood" /></a>
+	</div>
+	
+	<div class="cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4 lightorange">
+		<a title="Childhood" href="http://www.herdignity.net/childhood/">
+		<div class="cat-title lightorange"><p>Childhood</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/childhood-full.jpg" alt="Childhood" /></a>
 	</div> <!-- /.col -->
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Adolescence" href="http://www.herdignity.net/adolescence/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/adolescence.png"alt="Adolescence" /></a>
+	</div>
+	
+	<div class="cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4 darkorange">
+		<a title="Adolescence" href="http://www.herdignity.net/adolescence/">
+		<div class="cat-title darkorange"><p>Adolescence</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/adolescence-full.jpg" alt="Adolescence" /></a>
 	</div> <!-- /.col -->
+	</div>
+
 </div> <!-- /.row -->
 
 <div class="hd-categories row is-table-row">
@@ -77,21 +91,27 @@ global $more; $more = 0; while (have_posts()) : the_post(); ?>
 	</div> <!-- /.col -->
 	
 	<div class="extrablocks col-md-3 col-sm-3">
-		<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/woman.png" />
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/separate/woman.png" alt="" />
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Women" href="http://www.herdignity.net/women/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/women.png"alt="Women" /></a>
+	<div class="col-md-2 col-sm-2 col-xs-4 blue cat-box">
+		<a title="Women" href="http://www.herdignity.net/women/">
+		<div class="cat-title blue"><p>Women</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/women-full.jpg" alt="Women" /></a>
 	</div> <!-- /.col -->
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Motherhood" href="http://www.herdignity.net/motherhood/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/motherhood.png"alt="Motherhood" /></a>
+	
+	<div class="col-md-2 col-sm-2 col-xs-4 green cat-box">
+		<a title="Motherhood" href="http://www.herdignity.net/motherhood/">
+		<div class="cat-title green"><p>Motherhood</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/motherhood-full.jpg" alt="Motherhood" /></a>
 	</div> <!-- /.col -->
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Aging" href="http://www.herdignity.net/aging/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/aging.png"alt="Aging" /></a>
+	
+	<div class="col-md-2 col-sm-2 col-xs-4 purple cat-box">
+		<a title="Aging" href="http://www.herdignity.net/aging/">
+		<div class="cat-title purple"><p>Aging</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/aging-full.jpg" alt="Aging" /></a>
 	</div> <!-- /.col -->
+	
 </div> <!-- /.row -->
 
 <div class="hd-categories row is-table-row">
@@ -104,21 +124,27 @@ global $more; $more = 0; while (have_posts()) : the_post(); ?>
 	</div> <!-- /.col -->
 	
 	<div class="extrablocks col-md-3 col-sm-3">
-		<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/health.png" />
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/separate/health.png" alt="" />
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="HIV / AIDS" href="http://www.herdignity.net/hiv-aids/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/hiv.png"alt="HIV / AIDS" /></a>
+	<div class="col-md-2 col-sm-2 col-xs-4 medorange cat-box">
+		<a title="HIV / AIDS" href="http://www.herdignity.net/hiv-aids/">
+		<div class="cat-title medorange"><p>HIV / AIDS</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/hiv-full.jpg" alt="HIV / AIDS" /></a>
 	</div> <!-- /.col -->
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Healthy Communities" href="http://www.herdignity.net/healthy-communities/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/communities.png"alt="Healthy Communities" /></a>
+	
+	<div class="col-md-2 col-sm-2 col-xs-4 brown cat-box">
+		<a title="Healthy Communities" href="http://www.herdignity.net/healthy-communities/">
+		<div class="cat-title brown"><p>Healthy Communities</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/communities-full.jpg" alt="Healthy Communities" /></a>
 	</div> <!-- /.col -->
-	<div class="col-md-2 col-sm-2 col-xs-4">
-			<a title="Public Health" href="http://www.herdignity.net/public-health/">
-			<img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/separate/public.png"alt="Public Health" /></a>
+	
+	<div class="col-md-2 col-sm-2 col-xs-4 cyan cat-box">
+		<a title="Public Health" href="http://www.herdignity.net/public-health/">
+		<div class="cat-title cyan"><p>Public Health</p></div>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/public-full.jpg" alt="Public Health" /></a>
 	</div> <!-- /.col -->
+	
 
 
 

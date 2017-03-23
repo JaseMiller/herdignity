@@ -1,6 +1,8 @@
 <!--  Begin Footer -->
 <div class="footer">
 	
+	<div class="deco"></div>
+	
 <div class="row tagline">
 	<div class="col-md-12 col-sm-12">
 		<a title="About" href="http://www.herdignity.net/about/">Learn More</a>
@@ -42,31 +44,20 @@
 
 	<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-<?php
-query_posts('page_id=35'); 
-global $more;
-$more = 0; 
-while (have_posts()) : the_post(); ?>
-<?php the_content(); ?>				
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
+<p><a href="mailto:info@cbhd.org">info@cbhd.org</a> <img class="alignnone size-full wp-image-50" src="/wp-content/themes/herdignity/img/white-dot.png" alt="white-dot" width="9" height="9" /> <a title="Contact" href="http://www.herdignity.net/contact/">Contact</a> <img class="alignnone size-full wp-image-50" src="/wp-content/themes/herdignity/img/white-dot.png" alt="white-dot" width="9" height="9" /> <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" target="_blank"><img class="alignnone size-full wp-image-47 cc" src="/wp-content/themes/herdignity/img/cc.png" alt="cc" width="90" height="22" /></a></p>
 
 	</div> <!-- /.col -->
-</div> <!-- /.row -->
-
-<div class="row footer" id="">
-	<div class="col-md-12">
 	
-		<div class="deco"></div>
-
-	</div> <!-- /.col -->
+	
 </div> <!-- /.row -->
+
 </div> <!-- /.footer -->
 
 
 </div> <!--  End Wrapper -->
 </div> <!-- /.content -->
 </div> <!-- /.container-fluid -->
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
