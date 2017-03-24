@@ -3,7 +3,7 @@
 	
 	<div class="deco"></div>
 	
-<div class="row tagline">
+<div class="row tagline hidden-sm">
 	<div class="col-md-12 col-sm-12">
 		<a title="About" href="http://www.herdignity.net/about/">Learn More</a>
 		<img class="dot" src="http://herdignity.dev/wp-content/uploads/2013/02/dot-1.gif" alt="-" width="16" height="25" />

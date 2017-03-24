@@ -118,13 +118,11 @@ Author: JASE jase@jase.is
 	margin-bottom: 15px;
 }
 .aside {
-	border-right: 3px dotted #990033;
-	padding-right: 20px;
+	/* border-right: 3px dotted #990033; */
+	padding-right: 0px;
 }
 .aside .bottom {
 	/* border-bottom: 3px dotted #990033; */
-}
-.extrablocks {
 }
 .extrablocks h2, .aside h2 {
 	color:#660066;
@@ -134,13 +132,15 @@ Author: JASE jase@jase.is
 	font-size:22px;
 }
 .extrablocks p, .aside p {
-	margin-bottom:20px;
+	margin-bottom:0px;
 	color:#666;
 	padding:3px 0px;
 }
 img.lifespan {
 	max-height: 200px;
 	float: right;
+	position: relative;
+	right: -10px;
 }
 img.ls-bottom {
 	position: relative;
@@ -322,7 +322,7 @@ img.category-img {
 	padding-top: 30px;
 }
 .footer div.social img {
-	float: left;
+	float: none;
 	margin: 3px;
 	z-index: 9999;
 }
@@ -365,7 +365,7 @@ img.category-img {
 	.search { display: none; }
 	#menu { display: none; }
 
-	.extrablocks, .is-table-row .extrablocks, .aside, .is-table-row .aside {
+	.extrablocks, .is-table-row .extrablocks, .aside, .is-table-row .aside, .is-table-row .ls-col {
 		display: none;
 	}
 	.hd-categories {
