@@ -32,52 +32,38 @@ Template Name: Welcome
 	<h2>Growing the Network</h2><p>Help develop a global network of men &amp; women, individuals &amp; organizations, committed to the broader health needs of girls and women.</p>
 	</a>
 		<div class="bottom"></div>
-	
-<!--			<div class="left-col">
-<div id="sidebar">
-<ul class="block">
-<?php query_posts('post_type=featured&showposts=3'); 
-global $more; $more = 0; while (have_posts()) : the_post(); ?>
-<li><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2>
-<?php the_excerpt(); ?></a></li>
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
-</ul>
-</div></div>
--->
 	</div> <!-- /.col -->
 
-	
-	
+	<div class="col-md-1 col-sm-1">
+		<img class="lifespan ls-top" src="<?php bloginfo('template_directory'); ?>/img/hd-lifespan-top-01.png" alt="" />
+	</div>	
 
-	<div class="extrablocks col-md-3 col-sm-3">
+	<div class="extrablocks col-md-2 col-sm-2">
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/separate/girl.png" alt="" />
 	</div> <!-- /.col -->
 	
 	
-	<div class="cat-box">
-	<div class="col-md-2 col-sm-2 col-xs-4 lightgreen">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox lightgreen">
 		<a title="Prenatal / Infancy" href="http://www.herdignity.net/prenatal-infancy/">
 		<div class="cat-title lightgreen"><p>Prenatal / Infancy</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/prenatal-full.jpg" alt="Prenatal / Infancy" /></a>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/prenatal-full.jpg" alt="Prenatal / Infancy" /></a>	</div>
 	</div> <!-- /.col -->
-	</div>
 	
-	<div class="cat-box">
-	<div class="col-md-2 col-sm-2 col-xs-4 lightorange">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox lightorange">
 		<a title="Childhood" href="http://www.herdignity.net/childhood/">
 		<div class="cat-title lightorange"><p>Childhood</p></div>
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/childhood-full.jpg" alt="Childhood" /></a>
+		</div>
 	</div> <!-- /.col -->
-	</div>
 	
-	<div class="cat-box">
-	<div class="col-md-2 col-sm-2 col-xs-4 darkorange">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox darkorange">
 		<a title="Adolescence" href="http://www.herdignity.net/adolescence/">
 		<div class="cat-title darkorange"><p>Adolescence</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/adolescence-full.jpg" alt="Adolescence" /></a>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/adolescence-full.jpg" alt="Adolescence" /></a>	</div>
 	</div> <!-- /.col -->
-	</div>
 
 </div> <!-- /.row -->
 
@@ -90,26 +76,35 @@ global $more; $more = 0; while (have_posts()) : the_post(); ?>
 		<div class="bottom"></div>
 	</div> <!-- /.col -->
 	
-	<div class="extrablocks col-md-3 col-sm-3">
+	<div class="col-md-1 col-sm-1">
+		<img class="lifespan" src="<?php bloginfo('template_directory'); ?>/img/hd-lifespan-middle-01.png" alt="" />
+	</div>
+	
+	<div class="extrablocks col-md-2 col-sm-2">
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/separate/woman.png" alt="" />
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4 blue cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox blue">
 		<a title="Women" href="http://www.herdignity.net/women/">
 		<div class="cat-title blue"><p>Women</p></div>
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/women-full.jpg" alt="Women" /></a>
+		</div>
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4 green cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox green">
 		<a title="Motherhood" href="http://www.herdignity.net/motherhood/">
 		<div class="cat-title green"><p>Motherhood</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/motherhood-full.jpg" alt="Motherhood" /></a>
+		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/motherhood-full.jpg" alt="Motherhood" /></a>	</div>
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4 purple cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox purple">
 		<a title="Aging" href="http://www.herdignity.net/aging/">
 		<div class="cat-title purple"><p>Aging</p></div>
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/aging-full.jpg" alt="Aging" /></a>
+		</div>
 	</div> <!-- /.col -->
 	
 </div> <!-- /.row -->
@@ -123,26 +118,36 @@ global $more; $more = 0; while (have_posts()) : the_post(); ?>
 		<div class="bottom"></div>
 	</div> <!-- /.col -->
 	
-	<div class="extrablocks col-md-3 col-sm-3">
+	<div class="col-md-1 col-sm-1">
+		<img class="lifespan ls-bottom" src="<?php bloginfo('template_directory'); ?>/img/hd-lifespan-bottom-01.png" alt="" />
+	</div>
+	
+	<div class="extrablocks col-md-2 col-sm-2">
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/separate/health.png" alt="" />
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4 medorange cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+	<div class="innerbox medorange">
 		<a title="HIV / AIDS" href="http://www.herdignity.net/hiv-aids/">
 		<div class="cat-title medorange"><p>HIV / AIDS</p></div>
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/hiv-full.jpg" alt="HIV / AIDS" /></a>
+		</div>
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4 brown cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox brown">
 		<a title="Healthy Communities" href="http://www.herdignity.net/healthy-communities/">
 		<div class="cat-title brown"><p>Healthy Communities</p></div>
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/communities-full.jpg" alt="Healthy Communities" /></a>
+		</div>
 	</div> <!-- /.col -->
 	
-	<div class="col-md-2 col-sm-2 col-xs-4 cyan cat-box">
+	<div class="col-md-2 col-sm-2 col-xs-4">
+		<div class="innerbox cyan">
 		<a title="Public Health" href="http://www.herdignity.net/public-health/">
 		<div class="cat-title cyan"><p>Public Health</p></div>
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/categories/public-full.jpg" alt="Public Health" /></a>
+		</div>
 	</div> <!-- /.col -->
 	
 

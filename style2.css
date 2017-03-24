@@ -138,16 +138,35 @@ Author: JASE jase@jase.is
 	color:#666;
 	padding:3px 0px;
 }
-.hd-categories {
-	margin-bottom: 0px;
+img.lifespan {
+	max-height: 200px;
+	float: right;
 }
-.hd-categories .girl {
-	height: 100%;
-	background: url('img/separate/girl.png') no-repeat;
-	background-size: cover;
-	background-position: center;
+img.ls-bottom {
+	position: relative;
+	top: -8px;
+}
+img.ls-top {
+	position: relative;
+	bottom: -8px;
 }
 
+/*** CATEGORY IMAGE STRUCTURE ***/
+
+.hd-categories {
+	margin: 0;
+	padding: 4px 2px;
+}
+.hd-categories a {
+	text-decoration: none;
+}
+.hd-categories [class*="col-"] {
+	padding: 0 5px;
+}
+.hd-categories .innerbox {
+	position: relative;
+	display: table-cell;
+}
 div.cat-title {
 	position: absolute;
 	top: 0;
@@ -166,12 +185,9 @@ div.cat-title p {
 	padding: 10px 5px;
 	margin: 0;
 }
-.cat-box {
-	padding: 3px;
-}
-.hd-categories a {
-	text-decoration: none;
-}
+
+/*** CATEGORY IMAGE BACKGROUNDS ***/
+
 .hd-categories .lightgreen {
 	padding: 0;
 	background-color: #afb444;
@@ -209,23 +225,10 @@ div.cat-title p {
 	background-color: #1d9ed8;
 }
 
-
-
-
-
 .hd-categories a img:hover {
 	opacity: 0.5;
 }
 
-.prenatal {
-	background: url('img/categories/prenatal-full.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	float: none;
-	display: block !important;
-	vertical-align: top !important;
-	height: 100% !important;
-}
 img.category-img {
 	object-fit: cover;
 	height: 100%;
