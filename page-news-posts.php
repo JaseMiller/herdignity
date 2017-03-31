@@ -4,7 +4,7 @@ Template Name: 2 Column
 */
 ?>
 <?php get_header(); ?>
-<div class="page">
+<div class="page news-post">
 <h2><?php single_cat_title(); ?></h2>
 <hr class="dotted" />
 </div>

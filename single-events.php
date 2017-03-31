@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content">
+<div id="content events">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

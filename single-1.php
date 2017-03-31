@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content">
+<div id="content single">
 
 <div id="inner">
 

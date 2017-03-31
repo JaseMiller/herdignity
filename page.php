@@ -1,8 +1,10 @@
 <?php get_header(); ?>
-<div id="content">
+<div class="page content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<div id="page">
+<div class="row banner">
+	<div class="col-md-12 col-sm-12">
+
 <h2><?php the_title(); ?></h2>
 <hr class="dotted" />
 <div class="post" id="post-<?php the_ID(); ?>">
@@ -18,15 +20,31 @@
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
 
-</div><!--  End Page -->
-<div style="clear:both"> </div>
-<hr class="dotted" />
-<ul class="h-block"><?php query_posts('post_type=featured&showposts=3'); 
-global $more; $more = 0; while (have_posts()) : the_post(); ?>
-<li><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2>
-<?php the_excerpt(); ?></a></li>
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
-</ul>
+</div><!-- /.col -->
+</div><!-- /.row -->
+
+
+
+<div class="footer-menu row">
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<a href="http://www.herdignity.net/join/">
+		<h2>Growing the Network</h2><p>Help develop a global network of men &amp; women, individuals &amp; organizations, committed to the broader health needs of girls and women.</p>
+		</a>
+	</div><!-- /.col -->
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<a href="http://www.herdignity.net/join/">
+		<h2>Reduce Maternal Mortality</h2><p>Join us as we promote continued progress in reducing maternal mortality worldwide through community education, research, and opportunities to make a difference.</p>
+		</a>
+	</div><!-- /.col -->
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<a href="http://www.herdignity.net/join/">
+		<h2>Network Members</h2><p>Individuals and organizations who have already joined the Network.</p>
+		</a>
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+
+
+
 </div><!--  End Content -->
 <?php get_footer(); ?>

@@ -234,7 +234,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 #menu ul ul ul.left {left:-279px;}
 
 /* style the table so that it takes no ppart in the layout - required for IE to work */
-#menu table {position:absolute; top:0; left:0; border-collapse:collapse;;}
+#menu table {position:absolute; top:0; left:0; border-collapse:collapse;}
 
 /* style the second level links */
 #menu ul ul a {color:#fff; height:auto; padding:2px 10px;}
@@ -496,7 +496,8 @@ ul.block li p, ul.h-block li p{
 *********************/
 
 #issues-banner, #topic-banner, #stories-banner{
-	width:950px;height:587px;
+	max-width:950px;
+	height:587px;
 	margin:0px auto;
 }
 #issues-banner .image{
@@ -505,6 +506,7 @@ ul.block li p, ul.h-block li p{
 	height:587px;
 	text-align:center;
 	margin-bottom:-195px;
+	padding: 15px;
 }
 #topic-banner .image, #stories-banner .image{
 	position:relative;
@@ -544,7 +546,7 @@ ul.block li p, ul.h-block li p{
 	padding:15px 5px;
 	height:60px;
 	text-align:center;
-	background: transparent url('img/icons.png') 0px -800px; no-repeat;
+	background: transparent url('img/icons.png') 0px -800px no-repeat;
 }
 #issues-banner .tagline h2, #topic-banner .tagline h2, #stories-banner .tagline h2{
 	color:#555555;
@@ -557,7 +559,6 @@ ul.block li p, ul.h-block li p{
 #stories-banner .tagline h2 {line-height: 58px;}
 #inner{
 	clear:both;
-	width:960px;
 	padding:0px;
 	margin:8px auto;
 }
@@ -584,15 +585,14 @@ ul.block li p, ul.h-block li p{
 #inner .left-col .topics-box:nth-child(3) {
     display: none;
 }
-#inner .box:last-child, #inner .topics-box:last-child{
-	border-bottom:none;
+#inner .box:last-child, #inner .topics-box:last-child {
+	border-bottom: none;
 }
 
 #inner .box a, #inner .topics-box a{
 	text-decoration:none;
 	color:#666666;
 	display:block;
-	width:400px;
 }
 #inner .box a.moretag, #inner .topics-box a.moretag{
 	display:none;visibility:hidden;
@@ -602,14 +602,16 @@ ul.block li p, ul.h-block li p{
 	color:#3f8d42;
 }
 
-#inner .left-col, #inner .right-col{float:left;width:47%; margin-right:10px;}
+#inner .left-col, #inner .right-col {
+	margin-right:10px;
+	}
 
 #inner .left-col{
 	clear:both;
 	border-right:3px #666666 dotted;
 	padding-right:20px;
 	padding-top: 16px;
-	min-height: 400px;
+	min-height: 200px;
 }
 #inner .right-col{
 	margin-left:14px;
@@ -672,7 +674,7 @@ ul.block li p, ul.h-block li p{
 *********************************/
 
 span.diff{
-	background: url('img/icons.png') 0px -1112px; no-repeat;
+	background: url('img/icons.png') 0px -1112px no-repeat;
 	padding-left:100px;
 	color:#663399;
 	line-height:90%;
@@ -803,7 +805,7 @@ a#next:hover{
 }
 
 #category .post{
-	border-bottom:1px #ededed solid;
+	border-bottom: none; /* was 1px #ededed solid */
 }
 
 #category .post .entry{}
@@ -984,121 +986,6 @@ hr.dotted {
 /********************
     Contact Form
 *********************/
-#contact{
-	float:right;	
-	width:48%;
-	list-style:none;
-	margin:0px 10px 0px 10px;
-	padding:5px;
-}
-#contact li{
-	float: left;
-	height: 20px;
-	margin:20px 0px 10px;
-	position: relative;
-	width: 450px;
-}
-#contact li .text{
-	padding:5px 10px;
-	position:absolute;
-	z-index:100;
-	font-size:12px;
-	font-weight:600;
-	color:#663366;
-	min-width:75px;
-}
-#contact li .wpcf7-form-control-wrap input.zip {
-	width:35px;
-	padding:0px 10px;
-	position:absolute;
-	z-index:100;
-	color:#663366;
-	margin-left:370px;
-}
-#contact li .required{
-	color:#660000;
-	position:absolute;
-	right:10px;
-	top:5px;
-	z-index:100;
-}
-#contact li .wpcf7-form-control-wrap{
-	position: absolute;
-}
-#contact li .wpcf7-form-control-wrap input, #contact li .wpcf7-form-control-wrap textarea{
-	background:#fff;
-	border:solid 1px #828283;
-	height:30px;
-	border-radius:2px;
-	padding:3px 10p;
-	margin-left:180px;
-	width:250px;
-	z-index:100;
-}
-#contact li .wpcf7-form-control-wrap input:focus, #contact li .wpcf7-form-control-wrap textarea:focus{
-	background:#F0EFEF
-}
-#contact li .wpcf7-form-control-wrap textarea{
-	line-height: 28px;
-        padding: 10px;
-	height:150px;
-	width:220px;
-}
-#contact li#message{
-	min-height:160px;
-	margin:20px 0px 10px 0px;
-}
-#contact li select.wpcf7-select{
-	margin-left:180px;
-	height: 30px;
-	border:solid 1px #828283;
-	border-radius:2px;
-	padding:3px 10p;
-}
-#contact li#submit input{
-	color:#fff;
-	text-decoration:none;
-	margin:2px 7px 0 180px;
-	border:none;
-	width:150px;
-	border-radius:1px;
-	display:block;
-	padding:3px 6px;
-	text-align:center;
-	text-transform:uppercase;
-	background-image: -ms-linear-gradient(top, #996699 0%, #663366 100%);
-	background-image: -moz-linear-gradient(top, #996699 0%, #663366 100%);
-	background-image: -o-linear-gradient(top, #6996699 0%, #663366 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #996699), color-stop(1, #663366));
-	background-image: -webkit-linear-gradient(top, #996699 0%, #663366 100%);
-	background-image: linear-gradient(to bottom, #996699 0%, #663366 100%);
-}
-#contact li#submit input:hover{
-	background:#989999;
-	color:#fff;
-	text-shadow:0 1px 0 rgba(255,255,255,.25);
-	text-transform:uppercase;
-	cursor:pointer;
-}
-#contact li#reset input{
-	color:#fff;
-	float:left;
-	text-decoration:none;
-	margin:-52px 0px 0px 340px;
-	border:none;
-	border-radius:1px;
-	display:block;
-	padding:3px 6px;
-	text-align:center;
-	text-transform:uppercase;
-	background: #787879;
-}
-div.wpcf7-validation-errors {
-    clear: left;
-}
-#contact li .wpcf7-form-control-wrap input, #contact li .wpcf7-form-control-wrap textarea {
-	position:absolute;
-}
 
 
 /********************
@@ -1107,7 +994,7 @@ div.wpcf7-validation-errors {
 
 #footer{
 	clear:both;
-	background-color:#990033
+	background-color:#990033;
 	text-align:center;
 	margin:0px auto;
 	height:230px;

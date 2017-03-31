@@ -13,7 +13,7 @@ $search = new WP_Query($search_query);
 ?>
 
 <?php get_header(); ?>
-<div id="content">
+<div id="content search">
 <h2>Search Results</h2>
 
 <div id="page">

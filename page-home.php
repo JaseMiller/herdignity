@@ -35,7 +35,7 @@ Template Name: Welcome
 	</div> <!-- /.col -->
 
 	<div class="col-md-1 hidden-sm ls-col">
-		<img class="lifespan ls-top" src="<?php bloginfo('template_directory'); ?>/img/ls-top@2x.png" alt="" />
+		<img class="lifespan ls-top" src="<?php bloginfo('template_directory'); ?>/img/ls-top4@2x.png" alt="" />
 	</div>	
 
 	<div class="extrablocks col-md-2 hidden-sm">
@@ -77,7 +77,7 @@ Template Name: Welcome
 	</div> <!-- /.col -->
 	
 	<div class="col-md-1 hidden-sm ls-col">
-		<img class="lifespan" src="<?php bloginfo('template_directory'); ?>/img/ls-middle@2x.png" alt="" />
+		<img class="lifespan" src="<?php bloginfo('template_directory'); ?>/img/ls-middle4@2x.png" alt="" />
 	</div>
 	
 	<div class="extrablocks col-md-2 hidden-sm">
@@ -119,7 +119,7 @@ Template Name: Welcome
 	</div> <!-- /.col -->
 	
 	<div class="col-md-1 hidden-sm ls-col">
-		<img class="lifespan ls-bottom" src="<?php bloginfo('template_directory'); ?>/img/ls-bottom@2x.png" alt="" />
+		<img class="lifespan ls-bottom" src="<?php bloginfo('template_directory'); ?>/img/ls-bottom4@2x.png" alt="" />
 	</div>
 	
 	<div class="extrablocks col-md-2 hidden-sm">
