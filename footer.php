@@ -3,7 +3,7 @@
 	
 	<div class="deco"></div>
 	
-<div class="row tagline hidden-sm">
+<div class="row tagline hidden-sm hidden-print">
 	<div class="col-md-12 col-sm-12">
 		<a title="About" href="http://www.herdignity.net/about/">Learn More</a>
 		<img class="dot" src="http://herdignity.dev/wp-content/uploads/2013/02/dot-1.gif" alt="-" width="16" height="25" />
@@ -22,7 +22,7 @@
 		</div>
 	</div> <!-- /.col -->
 
-	<div class="col-md-2 col-sm-12 col-xs-12">
+	<div class="col-md-2 col-sm-12 col-xs-12 hidden-print">
 	
 		<div class="social">
 
