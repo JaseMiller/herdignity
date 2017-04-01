@@ -193,13 +193,7 @@ div.numbers-top div#nav_num a.activeSlide {
 	vertical-align: auto;
 	margin-bottom: 15px;
 }
-.aside {
-	/* border-right: 3px dotted #990033; */
-	padding-right: 0px;
-}
-.aside .bottom {
-	/* border-bottom: 3px dotted #990033; */
-}
+
 .extrablocks h2, .aside h2 {
 	color:#660066;
 	font-family:bauerbodni_blkcn_btblack;
@@ -211,6 +205,15 @@ div.numbers-top div#nav_num a.activeSlide {
 	margin-bottom:0px;
 	color:#666;
 	padding:3px 0px;
+}
+
+.aside, .aside h2, .aside p, .aside a {
+	/* border-right: 3px dotted #990033; */
+	padding: 0px;
+	margin: 0;
+}
+.aside .bottom {
+	/* border-bottom: 3px dotted #990033; */
 }
 img.lifespan {
 	max-height: 200px;
@@ -361,7 +364,7 @@ ul.related-links-list{
     width: 100%;
 }
 hr.dotted {
-	border:#a41f35 4px dotted;
+	border: #a41f35 4px dotted;
 	border-style: none none dotted;
 	letter-spacing: 8px;
 	height:8px;
@@ -718,6 +721,9 @@ ul#contact #reset input {
 	border: none;
 	padding: 0 20px;
 }
+ul#contact textarea {
+	max-width: 100%;
+}
 
 
 /**** CATEGORY STYLES ****/
@@ -726,7 +732,7 @@ ul#contact #reset input {
 	border-bottom: none; /* was 1px #ededed solid */
 }
 #category [class*="col-"] {
-	border-bottom: 1px #ededed solid;
+	/* border-bottom: 1px #ededed solid; */
 }
 #category .row [class*="col-"] a {
 	color: purple;
@@ -734,7 +740,7 @@ ul#contact #reset input {
 	font-family: sans-serif;
 }
 #category .row [class*="col-"] h2 {
-		color: purple;
+	color: purple;
 	text-align: left;
 	font-family: sans-serif;
 }
@@ -742,6 +748,7 @@ ul#contact #reset input {
 .news .post-item {
     overflow: hidden;
 	height: auto;
+	width: auto;
 	border-bottom: 1px solid #EDEDED;
 }
 .news .post-item .post {
@@ -899,6 +906,12 @@ ul#contact #reset input {
 	}
 	#inner .box:last-child, #inner .topics-box:last-child {
 		border-bottom: none;
+	}
+	form, form ul, ul#contact, ul#contact li, ul#contact li input {
+		padding-left: 0;
+		margin-left: 0;
+		padding-right: 0;
+		margin-right: 0;
 	}
 
 }

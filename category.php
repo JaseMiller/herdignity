@@ -3,15 +3,16 @@
 <div class="page content">
 
 	<div id="category">
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-	<div class="tag"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
-	<hr class="dotted" />
 	
-		<div class="row banner is-table-row">
+		<div class="tag"><h2><?php single_cat_title(); ?></h2></div>
+		<hr class="dotted" />
+	
+		<div class="row banner">
 
-
-				<div class="cat-col col-md-6 col-sm-6 col-xs-12">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
+	
+			<div class="cat-col col-md-6 col-sm-12 col-xs-12">
+				
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 				<div class="meta">

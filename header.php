@@ -49,7 +49,7 @@
 <!--  Begin Header -->
 <div class="row header-top">
 
-	<div class="search col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+	<div class="search col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 hidden-print">
 		<?php get_search_form(); ?>
 	</div> <!-- /.col -->
 
@@ -58,7 +58,7 @@
 
 	<div class="logo col-md-3 col-sm-3 col-xs-12">
 		<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
-		<img class="" src="<?php bloginfo('template_directory'); ?>/img/separate/logo.png" alt="<?php bloginfo('name'); ?>" /></a></h1>
+		<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/hdn-logo.png" alt="<?php bloginfo('name'); ?>" /></a></h1>
 	</div> <!-- /.col -->
 	
 	<div class="joinheader col-md-7 col-sm-7 col-xs-8">
@@ -67,7 +67,7 @@
 			<?php bloginfo('description'); ?></a>
 		</div> <!-- /.joinheader -->
 	</div> <!-- /.col -->
-	<div class="joinheader col-md-2 col-sm-2 col-xs-4">
+	<div class="joinheader col-md-2 col-sm-2 col-xs-4 hidden-print">
 		<a href="<?php bloginfo('url'); ?>/join/">
 			<img class="join-circle pull-right" src="<?php bloginfo('template_directory'); ?>/img/join-the-network.svg" alt="Join the Network" /></a>
 	</div>
@@ -78,7 +78,7 @@
 		<?php bloginfo('description'); ?>
 	</div>
 	
-<div class="row header-bottom">
+<div class="row header-bottom hidden-print">
 
 	<div class="navigation col-md-12 col-sm-12 col-xs-12">
 		<!--  Begin Menu -->
