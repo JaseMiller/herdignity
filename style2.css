@@ -437,6 +437,7 @@ hr.dotted {
 	width: 100%;
 	margin: 0px auto;
 }
+
 .issues-banner .image, .topic-banner .image {
 	position:relative;
 	z-index:20;
@@ -786,6 +787,9 @@ ul#contact textarea {
 
 	.tagline {
 		display: none;
+	}
+	.issues-banner .tagline {
+		display: inline;
 	}
 	.logo img {
 		margin: 0 auto;

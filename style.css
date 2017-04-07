@@ -1,8 +1,10 @@
 /*
 Theme Name: HER Dignity Network
+Author: JASE revision of Waters Designs original
+Author URI: http://jase.is
+Description: HDN v2 theme implements device responsive styling and improves many image-based techniques with faster, more flexible CSS techniques.
 Version: 2.0
-Original Author: Shari Waters @ Waters Designs
-Revised by: jase@jase.is
+Text Domain: herdignity2
 */
 
 @import url(fonts.css);
@@ -539,16 +541,15 @@ ul.block li p, ul.h-block li p{
 	height:50px;
 }
 
-#issues-banner .tagline{
+.issues-banner .tagline{
 	position:relative;
 	z-index:80;
 	margin:5px auto 0px;
 	padding:15px 5px;
-	height:60px;
 	text-align:center;
 	background: transparent url('img/icons.png') 0px -800px no-repeat;
 }
-#issues-banner .tagline h2, #topic-banner .tagline h2, #stories-banner .tagline h2{
+.issues-banner .tagline h2, #topic-banner .tagline h2, #stories-banner .tagline h2{
 	color:#555555;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -875,7 +876,7 @@ a#next:hover{
 }
 #resource .post{
 	float:left;
-	width:600px;
+	max-width:600px;
 }
 .post{
 	padding:0px 40px;
