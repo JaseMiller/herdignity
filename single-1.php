@@ -5,6 +5,13 @@
 
 <div id="resource">
 
+<div class="issues-banner">
+<div class="image"><img class="img-responsive" src="<?php the_post_thumbnail_url();?>" /></div>
+</div>
+
+<div class="row banner">
+	<div class="col-md-12 col-sm-12">
+
 <?php $related_links = get_related_links(true); if ($related_links) {
 ?><div class="related-posts"><div class="related-posts"><h2>Additional Resources</h2>
 <?php related_links(); ?></div></div>
@@ -29,19 +36,43 @@ if ($author != "") { echo 'Author: ' .$author;
 
 
 </div><!--  End post -->
+
+
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
-</div><!--  End Inner -->
-<div style="clear:both"> </div>
-<hr class="dotted" />
-<ul class="h-block"><?php query_posts('post_type=featured&showposts=3'); 
-global $more; $more = 0; while (have_posts()) : the_post(); ?>
-<li><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2>
-<?php the_excerpt(); ?></a></li>
-<?php endwhile; ?>
-<?php wp_reset_query(); ?></ul>
 
-</div><!--  End Content -->
+</div><!-- /.col -->
+</div><!-- /.row -->
+
+</div><!--  End Resource -->
+
+
+
+
+</div><!--  End Inner -->
+
+<div class="footer-menu row">
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<a href="http://www.herdignity.net/join/">
+		<h2>Growing the Network</h2><p>Help develop a global network of men &amp; women, individuals &amp; organizations, committed to the broader health needs of girls and women.</p>
+		</a>
+	</div><!-- /.col -->
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<a href="http://www.herdignity.net/join/">
+		<h2>Reduce Maternal Mortality</h2><p>Join us as we promote continued progress in reducing maternal mortality worldwide through community education, research, and opportunities to make a difference.</p>
+		</a>
+	</div><!-- /.col -->
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<a href="http://www.herdignity.net/join/">
+		<h2>Network Members</h2><p>Individuals and organizations who have already joined the Network.</p>
+		</a>
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+
+
+
+</div><!-- End Content -->
 
 <?php get_footer(); ?>
