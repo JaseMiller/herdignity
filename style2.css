@@ -151,6 +151,7 @@ div.numbers-top div#nav_num a.activeSlide {
 }
 .navbar ul li ul {
 	background: #a41f35;
+	opacity: 0.9;
 	color: #fff;
 	border: 0;
 }
