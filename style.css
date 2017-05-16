@@ -546,6 +546,7 @@ ul.block li p, ul.h-block li p{
 	z-index:80;
 	margin:5px auto 0px;
 	padding:15px 5px;
+	height:60px;
 	text-align:center;
 	background: transparent url('img/icons.png') 0px -800px no-repeat;
 }

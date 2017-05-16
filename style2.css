@@ -130,37 +130,51 @@ div.numbers-top div#nav_num a.activeSlide {
 .navigation {
 	padding-left: 0;
 	padding-right: 0;
+	border-bottom: 1px solid #a41f35;
 }
 .navbar {
-	border: 1px solid #e8abb5;
+	border: 0px solid #e8abb5;
 	margin-bottom: 0;
+	background: none;
 }
 .navbar ul li a {
 	font-size: 14px;
 	font-weight: 400;
 }
 .navbar ul li:hover {
-	background: #e8abb5;
+	background: none;
+	color: #a41f35 !important;
+	font-weight: bold;
+}
+.navbar li.active a {
+	background: none !important;
+}
+.navbar ul li ul {
+	background: #a41f35;
+	color: #fff;
+	border: 0;
+}
+.navbar ul li ul a {
 	color: #fff;
 }
 .navbar ul .highlighted {
-	background: #e8abb5;
+	background: #a41f35;
 	color: #fff;
 }
 .navbar ul li .highlighted {
-	background: #e8abb5;
+	background: #a41f35;
 	color: #fff;
 }
 .navbar ul .highlighted:hover {
-	background: #e8abb5;
+	background: #a41f35;
 	color: #fff;
 }
 .navbar ul li .highlighted:hover {
-	background: #e8abb5;
+	background: #a41f35;
 	color: #fff;
 }
 .navbar ul li a.highlighted {
-	background: #e8abb5;
+	background: #a41f35;
 	color: #fff;
 }
 .sub-arrow {
