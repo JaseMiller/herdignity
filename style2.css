@@ -5,14 +5,31 @@ Author: JASE jase@jase.is
 */
 
 @import url(fonts.css);
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone'); /* Bauer Bodoni is not available without a license for web fonts, which costs $199 for the full package at fonts.com. This Google Fonts library is Didone, which Bodoni is based on so there's a close family relationship, and it's free. Use font-family: 'Antic Didone', serif; when desired. */
+
+
+.reset-box-sizing,   /* for non-standard extensions that may conflict with standard box-model */
+.reset-box-sizing *,
+.reset-box-sizing *:before,
+.reset-box-sizing *:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
 
 .is-table-row {
     display: table;
+      -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .is-table-row [class*="col-"] {
     float: none;
 	display: table-cell;
 	vertical-align: top;
+	  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .is-table-row [class*="joinheader"] {
     float: none;
@@ -88,13 +105,11 @@ Author: JASE jase@jase.is
 #spd-shortcode-slider, #slides {
 	padding: 15px;
 	margin: 0;
-	border-radius: 4px;
 }
 #spd-shortcode-slider #slides img {
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
-	border-radius: 4px;
 }
 div.numbers-top div#nav_num {
 	position: absolute;
@@ -131,15 +146,19 @@ div.numbers-top div#nav_num a.activeSlide {
 	padding-left: 0;
 	padding-right: 0;
 	border-bottom: 1px solid #a41f35;
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
 }
 .navbar {
 	border: 0px solid #e8abb5;
 	margin-bottom: 0;
 	background: none;
+	margin: 0;
 }
 .navbar ul li a {
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 15px;		
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
 }
 .navbar ul li:hover {
 	background: none;
@@ -199,10 +218,11 @@ div.numbers-top div#nav_num a.activeSlide {
 }
 .tagline a{
 	color:#666666;
-	font-family: 'Myriad Pro Light','Lato', 'Century Gothic',Helvetica, Arial;
+	font-family: 'Myriad Pro','Lato', 'Century Gothic',Helvetica, Arial; /* changed from Myriad Pro Light */
 	font-size:3em;
 	text-transform:uppercase;
 	text-decoration:none;
+	font-weight: 700; /* Added line to embolden font slightly but not all the way to 800 */
 }
 .tagline .dot, .tagline .arrow {
 	vertical-align: auto;
@@ -603,6 +623,8 @@ hr.dotted {
 
 .footer {
 	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .footer .copy {
 	position:relative;
@@ -673,10 +695,11 @@ hr.dotted {
 }
 .footer .tagline a {
 	color:#660066;
-	font-family:'Myriad Pro Light','Lato','Century Gothic',Helvetica, Arial;
+	font-family:'Myriad Pro','Lato','Century Gothic',Helvetica, Arial; /* changed from Myriad Pro Light */
 	font-size:2.3em;
 	text-transform:uppercase;
 	text-decoration:none;
+	font-weight: 700; /* Added line to embolden font slightly but not all the way to 800 */
 	z-index:500;
 }
 .footer div.social {

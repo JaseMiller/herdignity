@@ -44,7 +44,7 @@
 
 	<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-<p><a href="mailto:info@cbhd.org">info@cbhd.org</a> <img class="alignnone size-full wp-image-50" src="/wp-content/themes/herdignity/img/white-dot.png" alt="white-dot" width="9" height="9" /> <a title="Contact" href="http://www.herdignity.net/contact/">Contact</a> <img class="alignnone size-full wp-image-50" src="/wp-content/themes/herdignity/img/white-dot.png" alt="white-dot" width="9" height="9" /> <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" target="_blank"><img class="alignnone size-full wp-image-47 cc" src="/wp-content/themes/herdignity/img/cc.png" alt="cc" width="90" height="22" /></a></p>
+<p><a href="mailto:info@cbhd.org">info@cbhd.org</a> <img class="alignnone size-full wp-image-50" src="/wp-content/themes/herdignity2/img/white-dot.png" alt="white-dot" width="9" height="9" /> <a title="Contact" href="http://www.herdignity.net/contact/">Contact</a> <img class="alignnone size-full wp-image-50" src="/wp-content/themes/herdignity2/img/white-dot.png" alt="white-dot" width="9" height="9" /> <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" target="_blank"><img class="alignnone size-full wp-image-47 cc" src="/wp-content/themes/herdignity2/img/cc.png" alt="cc" width="90" height="22" /></a></p>
 
 	</div> <!-- /.col -->
 	
