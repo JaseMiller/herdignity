@@ -49,7 +49,7 @@
 <!--  Begin Header -->
 <div class="row header-top">
 
-	<div class="search col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 hidden-print">
+	<div class="search col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 hidden-print">
 		<?php get_search_form(); ?>
 	</div> <!-- /.col -->
 

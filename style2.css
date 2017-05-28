@@ -138,6 +138,34 @@ div.numbers-top div#nav_num a.activeSlide {
 	color: #a41f35;
 }
 
+.search-text {
+    background: url('img/separate/spyglass.png') no-repeat scroll transparent;
+    background-position: right center;
+    border: 1px solid #EDEDED;
+    color: #999999;
+    font-size: 14px;
+    height: 17px;
+    margin-right: 5px;
+    margin-top: -3px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: auto;
+    z-index: 7;
+}
+.search-submit {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    height: 17px;
+    margin-left: -30px;
+    padding: 0;
+    position: relative;
+    text-indent: -1000em;
+    width: 16px;
+    z-index: 10;
+}
 
 
 /*** NAVIGATION MENU ***/
@@ -721,6 +749,9 @@ hr.dotted {
 	margin: 3px;
 	z-index: 9999;
 }
+.footer-menu {
+	padding: 10px;
+}
 .footer-menu h2 {
 	color:#660066;
 	font-family:bauerbodni_blkcn_btblack;
@@ -728,12 +759,14 @@ hr.dotted {
 	font-weight:400;
 	font-size:22px;
 	border-top: 4px dotted #a41f35;
+	text-decoration: none;
 }
-.footer-menu p, .footer-menu a {
+.footer-menu p, .footer-menu a, .footer-menu a h2 {
 	margin-bottom:0px;
 	color:#666;
 	padding:3px 0px;
-	text-decoration: none;
+	text-decoration: none !important;
+		padding-top: 20px;
 }
 
 
@@ -831,10 +864,15 @@ ul#contact textarea {
 
 
 
+@media (max-width: 940px){
+
+	.tag a {
+		font-size: 16px;
+	}
+}
 
 
-
-@media (max-width: 900px){
+@media (max-width: 680px){
 
 	.tagline {
 		display: none;
@@ -872,7 +910,39 @@ ul#contact textarea {
 	img.join-circle {
 	}
 	
-	.search { display: none; }
+	.search {
+		padding: 0;
+		position: relative;
+	}
+	.search-text {
+    background: url('img/separate/spyglass.png') no-repeat scroll transparent;
+    background-position: 95% center;
+    border: 1px solid #EDEDED;
+    color: #999999;
+    font-size: 16px;
+    height: auto;
+    margin-right: 5px;
+    margin-top: -3px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 80vw;
+    z-index: 7;
+	}
+	.search-submit {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    height: auto;
+    margin-left: -40px;
+    padding: 0;
+    position: relative;
+    text-indent: -1000em;
+    width: 16px;
+    z-index: 10;
+	}
+
 	#menu { display: none; }
 
 	.extrablocks, .is-table-row .extrablocks, .aside, .is-table-row .aside, .is-table-row .ls-col {
