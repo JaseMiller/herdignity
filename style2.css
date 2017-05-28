@@ -729,11 +729,13 @@ hr.dotted {
 	font-size:22px;
 	border-top: 4px dotted #a41f35;
 }
-.footer-menu p {
+.footer-menu p, .footer-menu a {
 	margin-bottom:0px;
 	color:#666;
 	padding:3px 0px;
+	text-decoration: none;
 }
+
 
 
 

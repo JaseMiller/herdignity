@@ -16,14 +16,24 @@
 <?php endif; ?>
 
 </div><!--  End Page -->
-<div style="clear:both"> </div>
-<hr class="dotted" />
-<ul class="h-block"><?php query_posts('post_type=featured&showposts=3'); 
-global $more; $more = 0; while (have_posts()) : the_post(); ?>
-<li><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2>
-<?php the_excerpt(); ?></a></li>
-<?php endwhile; ?>
-<?php wp_reset_query(); ?>
-</ul>
+
+<div class="footer-menu row">
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<?php $post_id = 145; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
+	</div><!-- /.col -->
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<?php $post_id = 144; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
+	</div><!-- /.col -->
+	<div class="col-md-4 col-sm-4 col-xs-12">
+		<?php $post_id = 143; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
 </div><!--  End Content -->
 <?php get_footer(); ?>

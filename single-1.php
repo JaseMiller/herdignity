@@ -54,19 +54,19 @@ if ($author != "") { echo 'Author: ' .$author;
 
 <div class="footer-menu row">
 	<div class="col-md-4 col-sm-4 col-xs-12">
-		<a href="http://www.herdignity.net/join/">
-		<h2>Growing the Network</h2><p>Help develop a global network of men &amp; women, individuals &amp; organizations, committed to the broader health needs of girls and women.</p>
-		</a>
+		<?php $post_id = 145; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
 	</div><!-- /.col -->
 	<div class="col-md-4 col-sm-4 col-xs-12">
-		<a href="http://www.herdignity.net/join/">
-		<h2>Reduce Maternal Mortality</h2><p>Join us as we promote continued progress in reducing maternal mortality worldwide through community education, research, and opportunities to make a difference.</p>
-		</a>
+		<?php $post_id = 144; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
 	</div><!-- /.col -->
 	<div class="col-md-4 col-sm-4 col-xs-12">
-		<a href="http://www.herdignity.net/join/">
-		<h2>Network Members</h2><p>Individuals and organizations who have already joined the Network.</p>
-		</a>
+		<?php $post_id = 143; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
 	</div><!-- /.col -->
 </div><!-- /.row -->
 
