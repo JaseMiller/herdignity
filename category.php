@@ -58,7 +58,7 @@
 		</a>
 	</div><!-- /.col -->
 	<div class="col-md-4 col-sm-4 col-xs-12">
-		<a href="http://www.herdignity.net/join/">
+		<a href="http://www.herdignity.net/featured/network-members/">
 		<h2>Network Members</h2><p>Individuals and organizations who have already joined the Network.</p>
 		</a>
 	</div><!-- /.col -->

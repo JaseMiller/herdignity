@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.smartmenus.js"></script>
 	<!-- SmartMenus jQuery Bootstrap Addon -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
-	
+
 	
 	
 	

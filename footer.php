@@ -10,7 +10,7 @@
 		<a title="Join" href="http://www.herdignity.net/get-involved/">Get Involved</a>
 		<img class="dot" src="http://herdignity.dev/wp-content/uploads/2013/02/dot-1.gif" alt="-" width="16" height="25" />
 		<a title="Share" href="http://www.herdignity.net/share/">Share Your Story</a>
-		<img class="arrow" src="http://herdignity.dev/wp-content/uploads/2013/02/arrow.gif" alt="arrow" width="43" height="30" />
+		<img class="arrow" src="http://herdignity.dev/wp-content/uploads/2013/02/arrow.gif" alt="" width="43" height="30" />
 	</div> <!-- /.col -->
 </div> <!-- /.row -->
 
@@ -58,6 +58,7 @@
 </div> <!-- /.content -->
 </div> <!-- /.container-fluid -->
 
+<script src="js/objectFitPolyfill.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

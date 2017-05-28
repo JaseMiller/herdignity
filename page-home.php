@@ -20,7 +20,7 @@ Template Name: Welcome
 		<a title="Join" href="http://www.herdignity.net/get-involved/">Get Involved</a>
 		<img class="dot" src="http://herdignity.dev/wp-content/uploads/2013/02/dot-1.gif" alt="-" width="16" height="25" />
 		<a title="Share" href="http://www.herdignity.net/share/">Share Your Story</a>
-		<img class="arrow" src="http://herdignity.dev/wp-content/uploads/2013/02/arrow.gif" alt="arrow" width="43" height="30" />
+		<img class="arrow" src="http://herdignity.dev/wp-content/uploads/2013/02/arrow.gif" alt="" width="43" height="30" />
 	</div> <!-- /.col -->
 </div> <!-- /.row -->
 
@@ -28,15 +28,15 @@ Template Name: Welcome
 <div class="hd-categories row is-table-row">
 
 	<div class="aside col-md-2 hidden-sm">
-	<a href="http://www.herdignity.net/join/">
-	<h2>Growing the Network</h2><p>Help develop a global network of men &amp; women, individuals &amp; organizations, committed to the broader health needs of girls and women.</p>
-	</a>
+	<?php $post_id = 145; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
 		<div class="bottom"></div>
 	</div> <!-- /.col -->
 
 	<div class="col-md-1 ls-col hidden-sm">
 		<img class="lifespan ls-top" src="<?php bloginfo('template_directory'); ?>/img/ls-top4@2x.png" alt="" />
-	</div>	
+	</div> <!-- /.col -->
 
 	<div class="extrablocks col-md-3 hidden-sm">
 		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/girl.jpg" alt="" />
@@ -47,14 +47,14 @@ Template Name: Welcome
 		<div class="innerbox lightgreen">
 		<a title="Prenatal / Infancy" href="http://www.herdignity.net/prenatal-infancy/">
 		<div class="cat-title lightgreen"><p>Prenatal / Infancy</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/prenatal.jpg" alt="Prenatal / Infancy" /></a>	</div>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/prenatal.jpg" alt="Prenatal / Infancy" /></a>	</div>
 	</div> <!-- /.col -->
 	
 	<div class="col-md-2 col-sm-4 col-xs-4">
 		<div class="innerbox lightorange">
 		<a title="Childhood" href="http://www.herdignity.net/childhood/">
 		<div class="cat-title lightorange"><p>Childhood</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/childhood.jpg" alt="Childhood" /></a>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/childhood.jpg" alt="Childhood" /></a>
 		</div>
 	</div> <!-- /.col -->
 	
@@ -62,7 +62,7 @@ Template Name: Welcome
 		<div class="innerbox darkorange">
 		<a title="Adolescence" href="http://www.herdignity.net/adolescence/">
 		<div class="cat-title darkorange"><p>Adolescence</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/adolescence.jpg" alt="Adolescence" /></a>	</div>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/adolescence.jpg" alt="Adolescence" /></a>	</div>
 	</div> <!-- /.col -->
 
 </div> <!-- /.row -->
@@ -70,9 +70,9 @@ Template Name: Welcome
 <div class="hd-categories row is-table-row">
 
 	<div class="aside col-md-2 hidden-sm">
-	<a href="http://www.herdignity.net/join/">
-	<h2>Reduce Maternal Mortality</h2><p>Join us as we promote <!--continued--> progress in reducing maternal mortality <!--worldwide--> through community education, research &amp; opportunities to make a difference.</p>
-	</a>
+	<?php $post_id = 144; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
 		<div class="bottom"></div>
 	</div> <!-- /.col -->
 	
@@ -88,7 +88,7 @@ Template Name: Welcome
 		<div class="innerbox blue">
 		<a title="Women" href="http://www.herdignity.net/women/">
 		<div class="cat-title blue"><p>Women</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/women.jpg" alt="Women" /></a>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/women.jpg" alt="Women" /></a>
 		</div>
 	</div> <!-- /.col -->
 	
@@ -96,14 +96,14 @@ Template Name: Welcome
 		<div class="innerbox green">
 		<a title="Motherhood" href="http://www.herdignity.net/motherhood/">
 		<div class="cat-title green"><p>Motherhood</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/motherhood.jpg" alt="Motherhood" /></a>	</div>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/motherhood.jpg" alt="Motherhood" /></a>	</div>
 	</div> <!-- /.col -->
 	
 	<div class="col-md-2 col-sm-4 col-xs-4">
 		<div class="innerbox purple">
 		<a title="Aging" href="http://www.herdignity.net/aging/">
 		<div class="cat-title purple"><p>Aging</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/aging.jpg" alt="Aging" /></a>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/aging.jpg" alt="Aging" /></a>
 		</div>
 	</div> <!-- /.col -->
 	
@@ -112,9 +112,9 @@ Template Name: Welcome
 <div class="hd-categories row is-table-row">
 
 	<div class="aside col-md-2 hidden-sm">
-	<a href="http://www.herdignity.net/join/">
-	<h2>Network Members</h2><p>Individuals and organizations who have already joined the Network.</p>
-	</a>
+	<?php $post_id = 143; $queried_post = get_post($post_id); $post_url = get_permalink($post_id); ?>
+<a href="<?php echo $post_url; ?>"><h2><?php echo $queried_post->post_title; ?></h2>
+<?php echo $queried_post->post_excerpt; ?></a>
 		<div class="bottom"></div>
 	</div> <!-- /.col -->
 	
@@ -130,7 +130,7 @@ Template Name: Welcome
 	<div class="innerbox medorange">
 		<a title="HIV / AIDS" href="http://www.herdignity.net/hiv-aids/">
 		<div class="cat-title medorange"><p>HIV / AIDS</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/hiv.jpg" alt="HIV / AIDS" /></a>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/hiv.jpg" alt="HIV / AIDS" /></a>
 		</div>
 	</div> <!-- /.col -->
 	
@@ -138,7 +138,7 @@ Template Name: Welcome
 		<div class="innerbox brown">
 		<a title="Healthy Communities" href="http://www.herdignity.net/healthy-communities/">
 		<div class="cat-title brown"><p>Healthy Communities</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/communities.jpg" alt="Healthy Communities" /></a>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/communities.jpg" alt="Healthy Communities" /></a>
 		</div>
 	</div> <!-- /.col -->
 	
@@ -146,7 +146,7 @@ Template Name: Welcome
 		<div class="innerbox cyan">
 		<a title="Public Health" href="http://www.herdignity.net/public-health/">
 		<div class="cat-title cyan"><p>Public Health</p></div>
-		<img class="category-img" src="<?php bloginfo('template_directory'); ?>/img/home/public.jpg" alt="Public Health" /></a>
+		<img class="category-img" data-object-fit="cover" src="<?php bloginfo('template_directory'); ?>/img/home/public.jpg" alt="Public Health" /></a>
 		</div>
 	</div> <!-- /.col -->
 	
