@@ -306,6 +306,8 @@ img.ls-top {
 .hd-categories {
 	margin: 0;
 	padding: 4px 2px;
+	padding-left: 10px; 
+	padding-right:10px; 
 }
 .hd-categories a {
 	text-decoration: none;
@@ -874,6 +876,10 @@ ul#contact textarea {
 
 @media (max-width: 680px){
 
+	.banner {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 	.tagline {
 		display: none;
 	}
@@ -1039,4 +1045,11 @@ ul#contact textarea {
 		margin-right: 0;
 	}
 
+}
+
+
+@media (min-width: 1000px){	
+	.hd-categories {
+		margin-top: 0 !important;
+	}
 }
