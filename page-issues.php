@@ -31,7 +31,7 @@ Template Name: Topics Basic Page
 <!--  End post -->
 
 		<div id="inner" class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 
 <?php $this_page_id=$wp_query->post->ID; ?>
 <?php query_posts(array('post_parent' => $this_page_id, 'post_type' => 'page'));?>
@@ -46,7 +46,7 @@ Template Name: Topics Basic Page
 
 <?php $i = 0; rewind_posts(); ?>
 
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 
 <?php if (have_posts()) : while(have_posts()) : $i++; if(($i % 2) !== 0) : $wp_query->next_post(); else : the_post(); ?>
 

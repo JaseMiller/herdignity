@@ -38,7 +38,7 @@ Template Name: Topic Secondary Page
 
 
 	<div id="inner" class="row">
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-6 col-xs-12">
 		
 <div class="subheads">
 	<div class="colhead left">Research &amp; Policy</div>
@@ -60,7 +60,7 @@ foreach ( $categories as $category ) {
 	
 <?php wp_reset_query(); ?>
 
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-6 col-xs-12">
 		
 <div class="subheads">
 	<div class="colhead right">Impact</span></div>

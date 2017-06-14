@@ -11,7 +11,7 @@
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
 	
-			<div class="cat-col col-md-6 col-sm-12 col-xs-12">
+			<div class="cat-col col-md-6 col-sm-6 col-xs-12">
 				
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
