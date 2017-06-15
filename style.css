@@ -694,7 +694,7 @@ span.diff{
 }
 .child-title{
 	margin:0px auto 5px;
-	height:70px;
+	height:auto;
 	text-align:center;
 	position:relative;
 	z-index:80;
@@ -705,7 +705,6 @@ span.diff{
 	text-transform:uppercase;
 	letter-spacing:2px;
 	padding:40px 0px 0px;
-	overflow:hidden;
 }
 #story{
 	min-height:200px;

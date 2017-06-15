@@ -8,7 +8,11 @@ Template Name: Welcome
 <div class="row banner">
 	<div class="col-md-12 col-sm-12">
 
-			<?php do_shortcode('[home_slider max_slides="4" slider_layout="numbers-top" post_type="HomeSlides" slider_fx="fade" hide_arrows="yes" slide_img_size="full" orderby="date" order="ASC"]'); ?>
+
+
+    <?php echo do_shortcode("[metaslider id=2206]"); ?>
+
+
 
 	</div> <!-- /.col -->
 </div> <!-- /.row -->
