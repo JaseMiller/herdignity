@@ -902,10 +902,9 @@ a#next:hover{
 	line-height: 24px;
 }
 #resource .related-posts{
-	width:200px;
+	width: auto;
 	padding-left:15px;
-	min-height:400px;
-	float:right;
+	height:auto;
 	border-left:#a41f35 4px dotted;
 }
 ul.related-links-list{

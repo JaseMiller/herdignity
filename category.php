@@ -8,7 +8,7 @@
 		<hr class="dotted" />
 	
 		<div class="row banner">
-
+asdf
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
 	
 			<div class="cat-col col-md-6 col-sm-6 col-xs-12">

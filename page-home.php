@@ -10,9 +10,9 @@ Template Name: Welcome
 
 
 
-    <?php echo do_shortcode("[metaslider id=2206]"); ?>
+    <?php echo do_shortcode("[metaslider id=1961]"); ?>
 
-
+<!-- [metaslider id=2206] -->
 
 	</div> <!-- /.col -->
 </div> <!-- /.row -->

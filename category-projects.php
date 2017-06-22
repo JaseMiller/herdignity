@@ -21,7 +21,7 @@ echo $topParentName;
 
 
 <div id="inner">
-
+dsfasdf
 <div id="story">
 <div class="left">
 <?php $recent = new WP_Query($query_string . "&showposts=1&offset=0"); 
